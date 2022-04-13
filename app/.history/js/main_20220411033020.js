@@ -125,9 +125,7 @@
 
     // Прыжок
     function jump() {
-        // if (player.v !== 0) { 
-        //     return false; 
-        // }
+        if (player.v !== 0) { return false; }
         player.v = 3.2;
         // playSound(sfxList.jump);
         jumpFX.play()
@@ -307,7 +305,7 @@
 //Заметки для себя --------------------------------------------
 
     //FIX:
-    //hitbox, buildings min height, sfx, optimization, mobile version, explosive
+    //hitbox, buildings min height, sfx, optimization, mobile versionб
 
     //ADD:
     //fonts

@@ -172,12 +172,12 @@
         buildingDiv.style.width = building.width + 'px';
         buildingDiv.style.height = building.height + 'px';
 
-        //МОЖНО раскомментировать код ниже. Платформы станут случайными домами
-        // const background = ['1.webp', '2.webp', '3.webp']
-        // buildingDiv.style.backgroundImage = 'url( images/buildings/' + background[Math.floor(Math.random() * background.length)] + ')';
-        // buildingDiv.style.backgroundSize = '100% 100%'
-        //разные цвета домов
-        // buildingDiv.style.setProperty('--hue', Math.round(Math.random() * 360) + 'deg');
+        // МОЖНО раскомментировать код ниже. Платформы станут случайными домами
+        const background = ['1.webp', '2.webp', '3.webp']
+        buildingDiv.style.backgroundImage = 'url( images/buildings/' + background[Math.floor(Math.random() * background.length)] + ')';
+        buildingDiv.style.backgroundSize = '100% 100%'
+        // разные цвета домов
+        buildingDiv.style.setProperty('--hue', Math.round(Math.random() * 360) + 'deg');
         
         building.div = buildingDiv;
 

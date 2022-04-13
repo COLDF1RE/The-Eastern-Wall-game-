@@ -125,9 +125,9 @@
 
     // Прыжок
     function jump() {
-        // if (player.v !== 0) { 
-        //     return false; 
-        // }
+        if (player.v !== 0) { 
+            return false; 
+        }
         player.v = 3.2;
         // playSound(sfxList.jump);
         jumpFX.play()

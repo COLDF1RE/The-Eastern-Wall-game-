@@ -179,7 +179,7 @@
         //разные цвета домов
         // buildingDiv.style.setProperty('--hue', Math.round(Math.random() * 360) + 'deg');
         
-        building.div = buildingDiv;
+        // building.div = buildingDiv;
 
         buildingsDiv.appendChild(buildingDiv);
         buildings.push(building);

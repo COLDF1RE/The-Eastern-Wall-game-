@@ -125,9 +125,7 @@
 
     // Прыжок
     function jump() {
-        // if (player.v !== 0) { 
-        //     return false; 
-        // }
+        if (player.v !== 0) { return false; }
         player.v = 3.2;
         // playSound(sfxList.jump);
         jumpFX.play()
@@ -145,6 +143,7 @@
             rainDrop.style.animationDelay = Math.random() * 7 + 's'
             rainDiv.appendChild(rainDrop)
         }
+        rainDiv.style.setProperty('border-right-color', 'rgba(255,255,255, 0.4)');
     }
     
     //Молния
@@ -307,7 +306,7 @@
 //Заметки для себя --------------------------------------------
 
     //FIX:
-    //hitbox, buildings min height, sfx, optimization, mobile version, explosive
+    //hitbox, buildings min height, sfx, optimization, mobile version
 
     //ADD:
     //fonts

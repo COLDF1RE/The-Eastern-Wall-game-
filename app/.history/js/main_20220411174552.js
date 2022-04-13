@@ -207,7 +207,7 @@
                 gameStatus = 'end';
                 msgDiv.innerHTML += `Click to restart`;
             }
-            return false;
+            // return false;
         }
 
         // music.play();
