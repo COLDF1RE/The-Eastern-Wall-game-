@@ -30,7 +30,7 @@ body {
   width: 100%;
   height: 100%;
   background-size: cover;
-  filter: hue-rotate(0);
+  filter: hue-rotate(var(--hue, ));;
 
   &--red {
     animation: background 10s linear forwards;
@@ -69,7 +69,7 @@ body {
   height: 100%;
   z-index: 2;
   transition: all 1s;
-  border-right-color: var(--color, rgba(255,255,255, 0.4));
+  border-right-color: rgba(255,255,255, 0.4);
   &__drop {
     position: absolute;
     border-color: transparent;

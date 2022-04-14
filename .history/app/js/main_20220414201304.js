@@ -106,10 +106,12 @@
         rainDiv.style.setProperty('--color', 'rgba(255,255,255, 0.4)');
         backgroundDiv.classList.remove('background--red')
 
+
         setTimeout(()=>{
             rain()
         }, 35000)
 
+        
         setTimeout(()=> {
             lightning()
         },39200)
@@ -119,6 +121,14 @@
             rainDiv.style.setProperty('--color', 'rgba(255, 0, 0, 0.7)');
             backgroundDiv.classList.add('background--red')
         },42500)
+
+        // setTimeout(()=>{
+            
+        // }, 42500)
+
+        // setTimeout(()=>{
+            
+        // }, 42500)
     }
 
     // Прыжок

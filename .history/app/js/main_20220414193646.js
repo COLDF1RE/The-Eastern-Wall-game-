@@ -86,7 +86,7 @@
         gameStatus = 'on';
         render();
         
-    
+        
         // music.pause()
         // music.currentTime =  0.0;
         mainFX.pause()
@@ -97,28 +97,37 @@
             msgDiv.classList = 'msg msg--off';
         }, 3000);
 
+        
+        monsterDiv.classList()
+
         monsterDiv.classList.remove('monster--active')
         setTimeout(()=>{
             monsterDiv.classList.add('monster--active')
         }, 0)
         
-        //Погода
-        rainDiv.style.setProperty('--color', 'rgba(255,255,255, 0.4)');
+        
         backgroundDiv.classList.remove('background--red')
+        setTimeout(()=>{
+            backgroundDiv.classList.add('background--red')
+        }, 42500)
 
+
+        //Погода
         setTimeout(()=>{
             rain()
         }, 35000)
-
+        
+        setTimeout(()=>{
+            rainDiv.style.setProperty('border-right-color', 'rgba(255, 0, 0, 0.7)');
+        }, 42500)
         setTimeout(()=> {
             lightning()
         },39200)
-
         setTimeout(()=> {
             lightning()
-            rainDiv.style.setProperty('--color', 'rgba(255, 0, 0, 0.7)');
-            backgroundDiv.classList.add('background--red')
         },42500)
+
+
     }
 
     // Прыжок

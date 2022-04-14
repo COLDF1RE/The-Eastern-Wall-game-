@@ -69,7 +69,7 @@ body {
   height: 100%;
   z-index: 2;
   transition: all 1s;
-  border-right-color: var(--color, rgba(255,255,255, 0.4));
+  border-right-color: var(--color, )rgba(255,255,255, 0.4);
   &__drop {
     position: absolute;
     border-color: transparent;

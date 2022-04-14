@@ -30,7 +30,7 @@ body {
   width: 100%;
   height: 100%;
   background-size: cover;
-  filter: hue-rotate(0);
+  filter: hue-rotate(0deg);
 
   &--red {
     animation: background 10s linear forwards;
@@ -69,7 +69,7 @@ body {
   height: 100%;
   z-index: 2;
   transition: all 1s;
-  border-right-color: var(--color, rgba(255,255,255, 0.4));
+  border-right-color: rgba(255,255,255, 0.4);
   &__drop {
     position: absolute;
     border-color: transparent;
@@ -162,8 +162,7 @@ body {
 .building {
   z-index: 1;
   position: absolute;
-  bottom: 20px; 
-  left: var(--building-x, 760px);
+  bottom: 20px; left: var(--building-x, 760px);
   border: solid #0007;
   border-width: 0 1px;
   background-image: url("../images/buildings/1.webp");
